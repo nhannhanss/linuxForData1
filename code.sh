@@ -8,7 +8,6 @@ echo "=========== PREPARE DATA ==========="
 
 csvformat -D "$DELIM" "$FILE" > "$CLEAN"
 echo "Created: $CLEAN"
-awk -F"$DELIM" '{print NF}' "$CLEAN" | sort | uniq -c
 echo
 
 # ==========================================
