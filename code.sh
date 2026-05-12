@@ -1,4 +1,3 @@
-#!/bin/bash
 
 FILE="tmdb-movies.csv"
 DELIM="~"
@@ -96,7 +95,3 @@ awk -F"$DELIM" '
   | head -10 \
   > profit.csv
 
-echo "Created: profit.csv"
-echo "Top 10 movies by profit:"
-cat profit.csv
-echo
